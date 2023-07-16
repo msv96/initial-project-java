@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) {
+    public static int old_main() {
         int variable = 8;
         char character = 'q';
         String str = "Hello and welcome!";
@@ -15,8 +15,11 @@ public class Main {
 
         System.out.println(scanned);
 
-        int scanned1 = sc.nextInt();
+        return sc.nextInt();
+    }
 
-        System.out.println(scanned1);
+    public static void main(String[] args) {
+        int variable = old_main();
+        System.out.println(variable);
     }
 }
