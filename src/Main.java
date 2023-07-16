@@ -20,12 +20,17 @@ public class Main {
     }
 
     public static void main(String[] args) {
-        int variable = old_main();
-        System.out.println(variable);
+//        int variable = old_main();
+//        System.out.println(variable);
 
         String[] newArr = new String[2];
         newArr[0] = "3";
         newArr[1] = "5";
         System.out.println(Arrays.toString(newArr));
+
+        int[] newArrOfInt = {1, 32, 23, 3, 55, 900};
+        for (int element:newArrOfInt) {
+            System.out.println(element);
+        }
     }
 }
